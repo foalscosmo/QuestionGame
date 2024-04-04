@@ -26,7 +26,7 @@ public class CVStoSO
             string[] splitData = s.Split(',');
 
             // CSV (COMMA SEPARATED VALUE) DATA FORMAT
-            // QUESTION, CATEGORY, CORRECT ANSWER, WRONG ANSWER 1, WRONG ANSWER 2, WRONG ANSWER 3
+            // QUESTION, CORRECT ANSWER, WRONG ANSWER 1, WRONG ANSWER 2, WRONG ANSWER 3
 
             QuestionData questionData = ScriptableObject.CreateInstance<QuestionData>();
             questionData.question = splitData[0]; // 1st column from csv file
